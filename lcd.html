@@ -1,0 +1,597 @@
+<!--
+
+      Created By Piyush Yadav
+
+    ___ ____  _ _   _  ___  _  _
+   | _ \| \ \/ | | | |/ __)| || |
+   | __/| |\  /| |_| |\___ | __ |
+   |_|  |_| |_| \___/  __ \|_||_/
+                      (___/
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page Title</title>
+         <link rel ="stylesheet" href = "lcd.css"/>
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="">
+         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <script src = "lcd.js"></script>
+         <script src = "sweetalert.min.js"></script>
+    </head>
+    <body onload = "load()">
+        <div id = "intro"> Custom 2×2 LCD Generator </div>
+        <div onclick = "info()" class = "fas fa-exclamation-circle fa-2x info"></div>
+        <div class="row">
+        <div class = "col wrapper">
+        <table class = "block b1" onclick = "setBlock(1)" cellspacing = "7px" cellpadding = "13px">
+            <tr onclick = "setRow(1)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(2)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(3)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(4)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(5)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(6)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(7)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(8)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+        </table>
+        <table class = "block b2" onclick = "setBlock(2)" cellspacing = "7px" cellpadding = "13px">
+            <tr onclick = "setRow(1)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(2)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(3)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(4)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(5)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(6)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(7)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(8)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+        </table>
+        <table class = "block b3" onclick = "setBlock(3)" cellspacing = "7px" cellpadding = "13px">
+            <tr onclick = "setRow(1)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(2)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(3)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(4)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(5)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(6)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(7)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(8)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+        </table>
+        <table class = "block b4" onclick = "setBlock(4)" cellspacing = "7px" cellpadding = "13px">
+            <tr onclick = "setRow(1)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(2)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(3)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(4)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(5)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(6)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(7)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+            <tr onclick = "setRow(8)">
+                <td onclick = "setPix(1)"></td>
+                <td onclick = "setPix(2)"></td>
+                <td onclick = "setPix(3)"></td>
+                <td onclick = "setPix(4)"></td>
+                <td onclick = "setPix(5)"></td>
+            </tr>
+        </table></div>
+        <div class = "col code">
+        <div class = "matCon">
+        <code>
+        #include &lt;LiquidCrystal.h&gt;
+        <br/><br/>
+        LiquidCrystal lcd(2, 3, 4, 5, 6, 7);<br/><br/>
+        // Rs = 2, Enable = 3, D4 = 4, D5 = 5, D6 = 6, D7 = 7 <br/><br/>
+       byte fig1[] = {
+        <table class = "matrix">
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        };
+        </code><br/><br/>
+        <code>
+        byte fig2[] = {
+        <table class = "matrix">
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        };
+        </code><br/><br/>
+        <code>
+        byte fig3[] = {
+        <table class = "matrix">
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        };
+        </code><br/><br/>
+        <code>
+        byte fig4[] = {
+        <table class = "matrix">
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>,</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        };
+        </code>
+        <code><pre>
+void setup() {
+
+    lcd.createChar(1, fig1);
+    lcd.createChar(2, fig2);
+    lcd.createChar(3, fig3);
+    lcd.createChar(4, fig4);
+    lcd.begin(16, 2);
+
+    lcd.write(byte(1));
+    lcd.write(byte(2));
+    lcd.setCursor(0, 1);
+    lcd.write(byte(3));
+    lcd.write(byte(4));
+}
+
+void loop() { }
+        </pre></code>
+        </div></div></div>
+        <div id = "foot">
+            Created with <font color ="red">&hearts;</font> By Piyush Yadav
+        </div>
+    </body>
+</html>
