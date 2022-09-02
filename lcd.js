@@ -9,22 +9,22 @@
                       (___/
 
  */
-var block = 1;
-var row = 1;
-var pix = 1;
-var pixBR;
+let block = 1;
+let row = 1;
+let pix = 1;
+let pixBR;
 
 load = function(){
     pixBR = document.getElementsByTagName("table")[block-1].rows[row-1].cells[pix-1];
     updateMat();
 }
 
-window.onscroll = function() {infoSH()};
+window.onscroll = function() {infoSH()};
 
-function infoSH() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementsByClassName("info")[0].style.left = "-35px";
-  }
+function infoSH() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    document.getElementsByClassName("info")[0].style.left = "-35px";
+  }
   else {
  document.getElementsByClassName("info")[0].style.left = "10px";
   }

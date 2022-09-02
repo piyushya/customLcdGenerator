@@ -31,7 +31,7 @@ body {
     top: 10px;
     left: 10px;
     color: white;
-    box-shadow: 0px 0px 10px lightskyblue;
+    box-shadow: 0px 0px 10px lightblue;
     border-radius: 50%;
     transition: left 0.1s;
 }
@@ -62,6 +62,12 @@ body {
 }
 .b4 {
     width: 150px;
+}
+
+.Link {
+    text-decoration:none;
+    color:white;
+    text-shadow: 0px 0px 3px white;
 }
 
 .code {
@@ -101,11 +107,12 @@ body {
     font-size: 20px;
 }
 .swal-overlay {
-  background-color: rgba(0, 0, 200, 0.5);
+    background-color: rgba(16, 16, 16, 0.5);
 }
 .swal-modal {
-  background-color: rgba(240, 240, 240, 1);
-  border: 5px solid white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(240, 240, 240, 1);
+    border: 5px solid white;
 }
 @media screen and (max-width: 900px) {
   .col {
